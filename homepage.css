@@ -1,0 +1,28 @@
+.people-btn, .duration-btn {
+  padding: 0.5rem 1rem; 
+  margin: 0.25rem; 
+  border: 2px solid transparent; 
+  border-radius: 0.5rem; 
+  background-color: #f3f4f6; 
+  color: #1f2937; 
+  cursor: pointer; 
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s; 
+}
+
+.active {
+  background-color: #facc15; 
+  color: #ffffff; 
+  border-color: #facc15; 
+}
+
+.people-btn:hover, .duration-btn:hover {
+  background-color: #eab308; 
+  color: #ffffff;
+  border-color: #eab308;
+}
+
+.active:hover {
+  background-color: #ca8a04; 
+  border-color: #ca8a04; 
+}
+ 
