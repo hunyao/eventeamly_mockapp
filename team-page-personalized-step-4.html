@@ -152,84 +152,58 @@
         <div class="graph"></div>
       </div>
       <div class="divider"></div>
-      <h2 class="text-xl font-bold border-b p-2">Next Activities</h2>
+      <h2 class="text-xl font-bold border-b p-2 ">4 events a year</h2>
       <div>
-        <table class="table">
+        <div class="flex justify-end" id="button-change-activity">
+          <button class="btn btn-primary" onclick="confirm_before_change_dates.showModal()">Edit dates</button>
+          <button class="btn btn-primary btn-outline hidden" onclick="editDates()">Done</button>
+        </div>
+        <table class="table table-zebra table-events">
           <thead>
             <tr>
               <th>Date</th>
-              <th>Event</th>
-              <th>Content</th>
-              <th>Location</th>
+              <th>Season</th>
+              <th>event</th>
+              <th>make you choice</th>
             </tr>
           </thead>
           <tbody>
-            <tr class="bg-info">
-              <td>2023-01-01</td>
-              <td>BBQ party</td>
-              <td></td>
-              <td>Where Jun lives in Japan</td>
+            <tr>
+              <td class="editable" type="calender" value="2023-06-01">2023-06-01</td>
+              <td>winter</td>
+              <td>Relaxing event</td>
+              <td>Sauna</td>
+            </tr>
+            <tr>
+              <td class="editable" type="calender" value="2023-06-01">2023-06-01</td>
+              <td>spring</td>
+              <td>Intelectural</td>
+              <td>quest</td>
+            </tr>
+            <tr>
+              <td class="editable" type="calender" value="2023-06-01">2023-06-01</td>
+              <td>summer</td>
+              <td>Event in the nature</td>
+              <td>swimming</td>
+            </tr>
+            <tr>
+              <td class="editable" type="calender" value="2023-06-01">2023-06-01</td>
+              <td>fall</td>
+              <td>Food experience</td>
+              <td>eating japanese food</td>
             </tr>
           </tbody>
         </table>
       </div>
+      <div class="flex justify-center p-4">
+        <button class="btn btn-primary btn-outline">
+          I confirmed the dates
+        </button>
+      </div>
       <div class="divider"></div>
-      <h2 class="text-xl font-bold border-b p-2">Scheduled events</h2>
+      <h2 class="text-xl font-bold border-b p-2">Next Activities</h2>
       <div>
-        <table class="table">
-          <thead>
-            <tr>
-              <th>Date</th>
-              <th>Event</th>
-              <th>Content</th>
-              <th>Location</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>2023-01-01</td>
-              <td>Sauna</td>
-              <td></td>
-              <td>somewhere</td>
-            </tr>
-            <tr>
-              <td>2023-01-01</td>
-              <td>Presents</td>
-              <td>Pizza</td>
-              <td></td>
-            </tr>
-            <tr>
-              <td>2023-01-01</td>
-              <td>Event in the nature</td>
-              <td></td>
-              <td>Mountain Fuji.</td>
-            </tr>
-            <tr>
-              <td>2023-01-01</td>
-              <td>Food experience</td>
-              <td>real japanese sushi</td>
-              <td>Fukuoka, Japan</td>
-            </tr>
-            <tr>
-              <td>2023-01-01</td>
-              <td>Office meet up</td>
-              <td></td>
-              <td>office room 419</td>
-            </tr>
-            <tr>
-              <td>2023-01-01</td>
-              <td>Intelectural</td>
-              <td></td>
-              <td>Rocket69</td>
-            </tr>
-            <tr>
-              <td>2023-01-01</td>
-              <td>Dinner</td>
-              <td></td>
-              <td>Office</td>
-            </tr>
-          </tbody>
-        </table>
+        No next activities yet
       </div>
       <div class="flex justify-center p-4">
         <a href="dashboard.html" class="btn btn-primary btn-outline">Go back to
